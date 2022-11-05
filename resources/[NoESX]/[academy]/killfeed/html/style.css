@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.killContainer {
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    background: rgba(0, 0, 0, 0.500);
+	border: 2.0px solid #ff0707;
+	border-radius: 30px;
+    color: #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 34px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.weapon {
+    height: 20px;
+    padding-top: 6px;
+    display: inline;
+    vertical-align: top;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.killer {
+    color: rgb(255, 255, 255);
+}
+
+.killed {
+    color: rgb(255, 255, 255);
+}
+
+.clear {
+    clear:both
+}
