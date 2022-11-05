@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<title></title>
+</head>
+
+<body style="display: none;">
+	<div id="imgserver">
+		<img src="https://media.discordapp.net/attachments/1034062085044322334/1037189725934600312/unknown.png?width=676&height=676" height="190px" width="220px"></div>
+	</div>
+	<div id="statusHuds">
+		<div class='discord'>DISCORD.GG/FASTACADEMY</div>
+		<div id="varHealth" class="bar">
+			<div id="boxSetHealth"></div>
+		</div>
+		<div id="rectangleContainer" class="rectContainer">
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			window.addEventListener('message', function(event) {
+				let data = event.data;
+	
+				$(".hud").css("display", data.show ? "none":"block");
+				$("#vida").css("width",  data.vida + "%");
+	
+				if (data.dano === "dano") {$(".dano").fadeIn()}
+	
+				if (data.vida <= 0) {
+					$('.sta').addClass('animL')
+				} else {$('.sta').removeClass('animL')}
+				
+			});
+		});
+	</script>
+
+</body>
+</html>

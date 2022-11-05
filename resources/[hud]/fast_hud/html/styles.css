@@ -1,0 +1,93 @@
+[class~=bar],
+#varHealth {
+	width: 16vw;
+}
+
+#boxSetHealth {
+	width: 100%;
+}
+
+#boxSetHealth {
+	height: 100%;
+}
+
+#varHealth>#boxSetHealth {
+	background-color: hsl(9, 100%, 50%);
+}
+
+[class~=bar] {
+	position: absolute;
+}
+
+#boxSetHealth {
+	transition: .7s;
+}
+
+#boxSetHealth {
+	background: #000;
+}
+
+[class~=bar] {
+	right: 5.6%;
+}
+
+#boxSetHealth {
+	position: relative;
+}
+
+[class~=bar] {
+	bottom: 5%;
+}
+
+[class~=bar],
+#boxSetHealth {
+	border-radius: .5vw;
+}
+
+[class~=bar] {
+	height: .5vw;
+}
+
+[class~=bar] {
+	background-color: transparent;
+}
+
+[class~=bar] {
+	box-shadow: 0 0 .5vw hsl(0, 100%, 50%), 0 0 .2vw hsl(22, 100%, 50%), 0 0 .2vw hsl(0, 100%, 50%), 0 0 .2vw hsl(22, 100%, 50%), 0 0 .5vw hsl(0, 100%, 50%);
+}
+
+[class~=bar] {
+	margin-right: .75pt;
+}
+
+[class~=bar] {
+	margin-left: 1px;
+}
+
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url('fonts/DINPro-Regular.ttf') format('truetype');
+}
+
+body {
+	font-family: 'DINPro-Regular';
+}
+
+#imgserver {
+    position: absolute;
+    right: 50px;
+    top: 8px;
+}
+
+
+.discord {
+	width: 10.0vw;
+    text-shadow: black 1.2px 1.2px 2px;
+	font-size: .8vw;  
+	text-align: center;
+	letter-spacing: .1vw;
+	position: absolute;
+	right: 12.8vh;
+	bottom: 3.2vh;
+	color:#f1f1f1
+}
