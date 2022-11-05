@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body>
+    
+    <div class="all" style = 'display: none'>
+        <header>
+            <div class="title-container">
+                <img src="images/voidpng2.png" alt="">
+                <p>ARSENAL POLICIA</p>
+            </div>
+
+            <div class="filter-container">
+                <p class ='filter active-filter' onclick = 'changeFilter(event)' >ARMAS</p>
+            </div>
+        </header>
+
+        <main>
+            <aside class="chooseGun-container">
+                <h1 class = 'main-title'>ARMAS</h1>
+                <div class="unit-gun gun"  onmouseover="showGun(event)" onmouseleave="hideGun(event)" data-name = 'PISTOLA MK2' data-status = '4|5|6' data-url = 'https://cdn.discordapp.com/attachments/911671844111810560/920390288403464272/pistol-mk2.png'>
+                    <div class="img-container" style = 'justify-content: center;'>
+                        <img src="https://cdn.discordapp.com/attachments/911671844111810560/920390288403464272/pistol-mk2.png" alt="">
+                    </div>
+                    <p>PISTOLA MK2</p>
+                    <button  onclick = 'sendData(event)' data-id = 'Pistola' style = 'display: none'>Equipar</button>
+                </div>
+
+                <div class="unit-gun gun"  onmouseover="showGun(event)" onmouseleave="hideGun(event)" data-name = 'PISTOLA DE COMBATE' data-status = '5|5|5' data-url = 'images/combat-pistol.png'>
+                    <div class="img-container" style = 'justify-content: center;'>
+                        <img src="images/combat-pistol.png" alt="">
+                    </div>
+                    <p>PISTOLA DE COMBATE</p>
+                    <button  onclick = 'sendData(event)' data-id = 'Glock' style = 'display: none'>Equipar</button>
+                </div>
+                <div class="unit-gun gun"  onmouseover="showGun(event)" onmouseleave="hideGun(event)" data-name = 'LIMPIAR ARMAS' data-status = '10|10|10' data-url = 'images/clean.svg'>
+                    <div class="img-container" style = 'justify-content: center;'>
+                        <img src="images/clean.svg" alt="">
+                    </div>
+                    <p>LIMPIAR ARMAS</p>
+                    <button  onclick = 'sendData(event)' data-id = 'Limpar' style = 'display: none'>LIMPIAR</button>
+                </div>
+
+                <!-- ============================================================================================================================================================================================ -->
+
+
+            </aside>
+
+            <aside style = "display: none" class="gunInf-container">
+                <h1 class="mainTitle">MPX</h1>
+                <div class = 'fullImg-container'>
+                    <img class="bigImage" src="images/carbine-rifle-mk2.png" alt="">
+                </div>
+                <div class="status-container">
+                    <div class="status-unit">
+                        <div class = 'spec-info'>
+                            <p>C</p>
+                            <div class="empyt">
+                                <div class="fill C width">9/10</div>
+                            </div>
+                        </div>
+                        <div class = 'spec-info'>
+                            <p>R</p>
+                            <div class="empyt">
+                                <div class="fill R width" >7/10</div>
+                            </div>
+                        </div>
+                        <div class = 'spec-info'>
+                            <p>D</p>
+                            <div class="empyt">
+                                <div class="fill D width">4/10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <div class="black-screen" style = 'display: none'></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
