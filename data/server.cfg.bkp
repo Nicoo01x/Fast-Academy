@@ -1,0 +1,51 @@
+set es_enableCustomData 1 
+set mysql_connection_string "mysql://root@127.0.0.1/es_extended?charset=utf8mb4"
+
+# Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+sv_hostname "^4[ARG] ^3⚡ BASE PVP ^4discord.gg/zondevelopment ⚡"
+set steam_webApiKey "708129046FE6D33812EB13B287DF567C"
+sv_licenseKey "cfxk_3hnlCJFkAUsYzb0rarX9_1on6d2"
+sv_maxclients 1 # Allow access to features usually locked behind a FiveM patreon key
+
+sets locale "es-AR" 
+sets tags "zondevelopment, Argentina, Español, pvp, esx, fps, zon, basedeventa, venta, development"
+sets discord "🔊 discord.gg/zondevelopment 🔊"
+sets 👑「Owner」👑 "16ღ#0001"
+sv_hostname "^^4[ARG] ^3⚡ BASE PVP ^4discord.gg/zondevelopment ⚡"
+sets sv_projectDesc "discord.gg/zondevelopment"
+sets sv_projectName "discord.gg/zondevelopment"
+sv_endpointprivacy true
+sv_tebexSecret "None"
+
+# Onesync
++set onesync legacy
+## [txAdmin CFG validator]: onesync MUST only be set in the txAdmin settings page.
+# onesync on
+
+set sv_enforceGameBuild 2372
+
+# Logos
+load_server_icon ""
+sets banner_detail "" 
+sets banner_connecting ""
+
+load_server_icon mylogo.png
+
+set voice_defaultVolume	2.0
+## Add system admins
+add_ace group.admin command.skin allow
+add_ace group.admin command.dvall
+add_ace group.mod command.revive allow
+add_ace group.mod command.heal allow
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_ace resource.es_extended command.add_ace allow
+add_ace resource.es_extended command.add_principal allow
+add_ace resource.es_extended command.remove_principal allow
+add_ace resource.es_extended command.stop allow
+
+exec resources.cfg
+
